@@ -1,0 +1,1 @@
+sample_id,tool_url,tested_at_utc,browser_version,os_device,settings,input_sha256,input_bytes,input_width,input_height,input_format,target_kb,target_bytes,output_file,output_sha256,output_bytes,output_width,output_height,output_format,within_limit,trial_1_ms,trial_2_ms,trial_3_ms,visual_notes,error_notes
