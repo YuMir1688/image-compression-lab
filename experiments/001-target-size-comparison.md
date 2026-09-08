@@ -28,6 +28,16 @@ For the main experiment define 1 KB = 1,000 bytes. Thresholds are 20,000 / 50,00
 
 Open browser Network tools before selecting a non-sensitive sample, preserve the request log, and inspect requests during selection, compression and download. Record observation scope and uncertainty. Do not publish cookies, tokens, personal identifiers or raw authenticated request logs. An absence of observed uploads in one test is not a universal security guarantee.
 
+## Verify an exported file
+
+Run this read-only PowerShell command with an actual downloaded image:
+
+```powershell
+./experiments/measure-output.ps1 -Path './results/outputs/sample-100kb.jpg' -TargetKB 100
+```
+
+It reports exact bytes, the decimal KB threshold, pass/fail and SHA-256. An empty file fails. The script does not upload the image or inspect its visual quality. Copy the corresponding values into the results CSV; measure dimensions and timing separately.
+
 ## Reporting template
 
 ### Environment
